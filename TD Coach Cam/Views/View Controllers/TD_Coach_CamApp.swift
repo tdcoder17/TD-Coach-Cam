@@ -11,7 +11,8 @@ import SwiftUI
 struct TD_Coach_CamApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+//            ContentView()
+            CloudKitUser()
         }
     }
 }
