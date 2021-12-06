@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E49E9F62275A78330048A62E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49E9F61275A78330048A62E /* User.swift */; };
+		E49E9F65275A78610048A62E /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E49E9F64275A78610048A62E /* CloudKit.framework */; };
 		E4BC896E2757E0EA0076F4D5 /* TD_Coach_CamApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BC896D2757E0EA0076F4D5 /* TD_Coach_CamApp.swift */; };
 		E4BC89702757E0EA0076F4D5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BC896F2757E0EA0076F4D5 /* ContentView.swift */; };
 		E4BC89722757E0EC0076F4D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4BC89712757E0EC0076F4D5 /* Assets.xcassets */; };
@@ -14,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E49E9F61275A78330048A62E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		E49E9F64275A78610048A62E /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		E4BC896A2757E0EA0076F4D5 /* TD Coach Cam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TD Coach Cam.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4BC896D2757E0EA0076F4D5 /* TD_Coach_CamApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TD_Coach_CamApp.swift; sourceTree = "<group>"; };
 		E4BC896F2757E0EA0076F4D5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -26,17 +30,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E49E9F65275A78610048A62E /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E49E9F63275A78610048A62E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E49E9F64275A78610048A62E /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E4BC89612757E0EA0076F4D5 = {
 			isa = PBXGroup;
 			children = (
 				E4BC896C2757E0EA0076F4D5 /* TD Coach Cam */,
 				E4BC896B2757E0EA0076F4D5 /* Products */,
+				E49E9F63275A78610048A62E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				E4BC897F2757E19E0076F4D5 /* Model Controllers */,
+				E49E9F61275A78330048A62E /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -179,6 +194,7 @@
 			files = (
 				E4BC89702757E0EA0076F4D5 /* ContentView.swift in Sources */,
 				E4BC896E2757E0EA0076F4D5 /* TD_Coach_CamApp.swift in Sources */,
+				E49E9F62275A78330048A62E /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
