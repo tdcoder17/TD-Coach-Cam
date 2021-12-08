@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E49E9F62275A78330048A62E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49E9F61275A78330048A62E /* User.swift */; };
+		E49E9F62275A78330048A62E /* Coach.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49E9F61275A78330048A62E /* Coach.swift */; };
 		E49E9F65275A78610048A62E /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E49E9F64275A78610048A62E /* CloudKit.framework */; };
 		E4B699FB275E806B00E85F3F /* CloudKitUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B699FA275E806B00E85F3F /* CloudKitUser.swift */; };
 		E4B699FE275E85CB00E85F3F /* CloudKitEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B699FD275E85CB00E85F3F /* CloudKitEnum.swift */; };
@@ -18,7 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		E49E9F61275A78330048A62E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		E49E9F61275A78330048A62E /* Coach.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coach.swift; sourceTree = "<group>"; };
 		E49E9F64275A78610048A62E /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		E4B699FA275E806B00E85F3F /* CloudKitUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitUser.swift; sourceTree = "<group>"; };
 		E4B699FC275E80E200E85F3F /* TD Coach Cam.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "TD Coach Cam.entitlements"; sourceTree = "<group>"; };
@@ -108,7 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				E4BC897F2757E19E0076F4D5 /* Model Controllers */,
-				E49E9F61275A78330048A62E /* User.swift */,
+				E49E9F61275A78330048A62E /* Coach.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -211,7 +211,7 @@
 				E4B699FE275E85CB00E85F3F /* CloudKitEnum.swift in Sources */,
 				E4BC89702757E0EA0076F4D5 /* ContentView.swift in Sources */,
 				E4BC896E2757E0EA0076F4D5 /* TD_Coach_CamApp.swift in Sources */,
-				E49E9F62275A78330048A62E /* User.swift in Sources */,
+				E49E9F62275A78330048A62E /* Coach.swift in Sources */,
 				E4B699FB275E806B00E85F3F /* CloudKitUser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

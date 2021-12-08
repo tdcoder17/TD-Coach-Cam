@@ -9,15 +9,15 @@ import CloudKit
 import UIKit
 
 //This gives CloudKit points of reference
-struct UserStrings {
+struct CoachStrings {
     static let recordTypeKey = "User"
-    fileprivate static let userNameKey = "username"
+    fileprivate static let coachNameKey = "username"
     static let appleUserRefKey = "apperUserRef"
     fileprivate static let photoAssetKey = "photoAsset"
 }//End of struct
 
-class User {
-    var username: String
+class Coach {
+    var coachName: String
     var recordID: CKRecord.ID
     var appleUserRef: CKRecord.Reference
     
@@ -47,22 +47,22 @@ class User {
         }
     }
     
-    init(username: String, recordID: CKRecord.ID = CKRecord.ID(recordName: UUID().uuidString), appleUserRef: CKRecord.Reference) {
-        self.username = username
+    init(coachName: String, recordID: CKRecord.ID = CKRecord.ID(recordName: UUID().uuidString), appleUserRef: CKRecord.Reference) {
+        self.coachName = coachName
         self.recordID = recordID
         self.appleUserRef = appleUserRef
     }
 }//End of class
 
 //MARK: - Extensions
-extension User {
+extension Coach {
     convenience init?(ckRecord: CKRecord) {
-        guard let username = ckRecord[UserStrings.userNameKey] as? String,
-              let appleUserRef = ckRecord[UserStrings.appleUserRefKey] as? CKRecord.Reference else { return nil }
+        guard let username = ckRecord[CoachStrings.coachNameKey] as? String,
+              let appleUserRef = ckRecord[CoachStrings.appleUserRefKey] as? CKRecord.Reference else { return nil }
         
         var foundPhoto: UIImage?
         
-        if let photoAsset = ckRecord[UserStrings.photoAssetKey] as? CKAsset {
+        if let photoAsset = ckRecord[CoachStrings.photoAssetKey] as? CKAsset {
             do {
                 let data = try Data(contentsOf: photoAsset.fileURL!)
                 foundPhoto = UIImage(data: data)
@@ -71,6 +71,24 @@ extension User {
             }
         }
         
-        self.init(username: username, recordID: ckRecord.recordID, appleUserRef: appleUserRef)
+        self.init(coachName: username, recordID: ckRecord.recordID, appleUserRef: appleUserRef)
+    }
+}//End of extension
+
+extension Coach: Equatable {
+    static func == (lhs: Coach, rhs: Coach) -> Bool {
+        return lhs.recordID == rhs.recordID
+    }
+}//End of extension
+
+extension CKRecord {
+    convenience init(coach: Coach) {
+        self.init(recordType: CoachStrings.recordTypeKey, recordID: coach.recordID)
+        
+        setValuesForKeys([
+            CoachStrings.coachNameKey : coach.coachName,
+            CoachStrings.appleUserRefKey : coach.appleUserRef,
+            CoachStrings.photoAssetKey : coach.photoAsset
+        ])
     }
 }//End of extension
