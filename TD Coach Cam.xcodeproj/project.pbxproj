@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		E4605C8A2761112600BF3FDC /* CoachError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4605C892761112600BF3FDC /* CoachError.swift */; };
 		E4605C8C2761124800BF3FDC /* CoachController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4605C8B2761124800BF3FDC /* CoachController.swift */; };
+		E49C92A527B2E324002CBBD5 /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49C92A427B2E324002CBBD5 /* Camera.swift */; };
 		E49E9F62275A78330048A62E /* Coach.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49E9F61275A78330048A62E /* Coach.swift */; };
 		E49E9F65275A78610048A62E /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E49E9F64275A78610048A62E /* CloudKit.framework */; };
 		E4B699FB275E806B00E85F3F /* CloudKitUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B699FA275E806B00E85F3F /* CloudKitUser.swift */; };
@@ -22,6 +23,7 @@
 /* Begin PBXFileReference section */
 		E4605C892761112600BF3FDC /* CoachError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachError.swift; sourceTree = "<group>"; };
 		E4605C8B2761124800BF3FDC /* CoachController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachController.swift; sourceTree = "<group>"; };
+		E49C92A427B2E324002CBBD5 /* Camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
 		E49E9F61275A78330048A62E /* Coach.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coach.swift; sourceTree = "<group>"; };
 		E49E9F64275A78610048A62E /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		E4B699FA275E806B00E85F3F /* CloudKitUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitUser.swift; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 			children = (
 				E4BC897E2757E1900076F4D5 /* View Controllers */,
 				E4B699FA275E806B00E85F3F /* CloudKitUser.swift */,
+				E49C92A427B2E324002CBBD5 /* Camera.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E49C92A527B2E324002CBBD5 /* Camera.swift in Sources */,
 				E4B699FE275E85CB00E85F3F /* CloudKitEnum.swift in Sources */,
 				E4605C8A2761112600BF3FDC /* CoachError.swift in Sources */,
 				E4BC89702757E0EA0076F4D5 /* ContentView.swift in Sources */,
