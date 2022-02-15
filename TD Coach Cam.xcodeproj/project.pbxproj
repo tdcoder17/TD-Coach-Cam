@@ -123,9 +123,9 @@
 		E4BC897D2757E15C0076F4D5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				E4BC897E2757E1900076F4D5 /* View Controllers */,
 				E4B699FA275E806B00E85F3F /* CloudKitUser.swift */,
 				E49C92A427B2E324002CBBD5 /* Camera.swift */,
+				E4BC897E2757E1900076F4D5 /* View Controllers */,
 			);
 			path = Views;
 			sourceTree = "<group>";

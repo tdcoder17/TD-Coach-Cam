@@ -20,7 +20,6 @@ struct Camera_Previews: PreviewProvider {
 }//End of struct
 
 struct CoachCam: View {
-
     @StateObject var camera = CoachCamModel()
     
     var body: some View {
@@ -29,7 +28,16 @@ struct CoachCam: View {
                 .ignoresSafeArea(.all, edges: .all)
             
             VStack {
-                
+                if camera.isTaken {
+                    Button(action: {}, label: {
+                        Image(systemName: "arrow.triangle.2.circlepath.camera")
+                            .foregroundColor(.black)
+                            .padding()
+                            .background(Color.white)
+                            .clipShape(Circle())
+                    })
+                        .padding(.trailing, 10)
+                }
                 Spacer()
                 
                 HStack {
